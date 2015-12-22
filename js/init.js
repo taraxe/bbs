@@ -44,7 +44,7 @@
 		},
 		plugins: {
 			layers: {
-				navPanel: {
+				/*navPanel: {
 					animation: 'pushX',
 					breakpoints: 'medium',
 					clickToHide: true,
@@ -63,7 +63,7 @@
 					position: 'top-left',
 					side: 'top',
 					width: '6em'
-				}
+				}*/
 			}
 		}
 	});
