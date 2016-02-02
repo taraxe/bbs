@@ -1,143 +1,201 @@
 <!DOCTYPE HTML>
 <html>
-  <head>
+<head>
     <title>Babydiem, baby-sitting à la demande</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <!--[if lte IE 8]>
+    <script src="js/html5shiv.js"></script><![endif]-->
     <script src="js/jquery.min.js"></script>
     <script src="js/skel.min.js"></script>
     <script src="js/skel-layers.min.js"></script>
     <script src="js/init.js"></script>
     <noscript>
-      <link rel="stylesheet" href="css/skel.css" />
-      <link rel="stylesheet" href="css/style.css" />
-      <link rel="stylesheet" href="css/style-xlarge.css" />
+        <link rel="stylesheet" href="css/skel.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
+        <link rel="stylesheet" href="css/style-xlarge.css"/>
     </noscript>
 
     <!-- formulaire mailchimp -->
-    <link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
+    <!--<link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">-->
     <style type="text/css">
-      /*#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif;}*/
-      #mc_embed_signup {
-        clear:left;
-        font:14px Helvetica,Arial,sans-serif;
-        width:600px;
-      }
-      /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-         We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+        /*!*#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif;}*!
+        #mc_embed_signup {
+          clear:left;
+          font:14px Helvetica,Arial,sans-serif;
+          width:600px;
+        }*/
+        /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+           We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
     </style>
-    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='MMERGE3';ftypes[3]='phone';fnames[5]='MMERGE5';ftypes[5]='number';
-      /*
-       * Translated default messages for the $ validation plugin.
-       * Locale: FR
-       */
-      $.extend($.validator.messages, {
-        required: "Ce champ est requis.",
-        remote: "Veuillez remplir ce champ pour continuer.",
-        email: "Veuillez entrer une adresse email valide.",
-        url: "Veuillez entrer une URL valide.",
-        date: "Veuillez entrer une date valide.",
-        dateISO: "Veuillez entrer une date valide (ISO).",
-        number: "Veuillez entrer un nombre valide.",
-        digits: "Veuillez entrer (seulement) une valeur numérique.",
-        creditcard: "Veuillez entrer un numéro de carte de crédit valide.",
-        equalTo: "Veuillez entrer une nouvelle fois la même valeur.",
-        accept: "Veuillez entrer une valeur avec une extension valide.",
-        maxlength: $.validator.format("Veuillez ne pas entrer plus de {0} caractères."),
-        minlength: $.validator.format("Veuillez entrer au moins {0} caractères."),
-        rangelength: $.validator.format("Veuillez entrer entre {0} et {1} caractères."),
-        range: $.validator.format("Veuillez entrer une valeur entre {0} et {1}."),
-        max: $.validator.format("Veuillez entrer une valeur inférieure ou égale à {0}."),
-        min: $.validator.format("Veuillez entrer une valeur supérieure ou égale à {0}.")
-      });}(jQuery));var $mcj = jQuery.noConflict(true);
+    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+    <script type='text/javascript'>(function ($) {
+        window.fnames = new Array();
+        window.ftypes = new Array();
+        fnames[0] = 'EMAIL';
+        ftypes[0] = 'email';
+        fnames[1] = 'FNAME';
+        ftypes[1] = 'text';
+        fnames[2] = 'LNAME';
+        ftypes[2] = 'text';
+        fnames[3] = 'MMERGE3';
+        ftypes[3] = 'phone';
+        fnames[5] = 'MMERGE5';
+        ftypes[5] = 'number';
+        /*
+         * Translated default messages for the $ validation plugin.
+         * Locale: FR
+         */
+        $.extend($.validator.messages, {
+            required: "Ce champ est requis.",
+            remote: "Veuillez remplir ce champ pour continuer.",
+            email: "Veuillez entrer une adresse email valide.",
+            url: "Veuillez entrer une URL valide.",
+            date: "Veuillez entrer une date valide.",
+            dateISO: "Veuillez entrer une date valide (ISO).",
+            number: "Veuillez entrer un nombre valide.",
+            digits: "Veuillez entrer (seulement) une valeur numérique.",
+            creditcard: "Veuillez entrer un numéro de carte de crédit valide.",
+            equalTo: "Veuillez entrer une nouvelle fois la même valeur.",
+            accept: "Veuillez entrer une valeur avec une extension valide.",
+            maxlength: $.validator.format("Veuillez ne pas entrer plus de {0} caractères."),
+            minlength: $.validator.format("Veuillez entrer au moins {0} caractères."),
+            rangelength: $.validator.format("Veuillez entrer entre {0} et {1} caractères."),
+            range: $.validator.format("Veuillez entrer une valeur entre {0} et {1}."),
+            max: $.validator.format("Veuillez entrer une valeur inférieure ou égale à {0}."),
+            min: $.validator.format("Veuillez entrer une valeur supérieure ou égale à {0}.")
+        });
+    }(jQuery));
+    var $mcj = jQuery.noConflict(true);
     </script>
     <!-- formulaire mailchimp -->
 
-  </head>
-  <body class="landing">
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+</head>
+<body class="landing">
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
     ga('create', 'UA-72414000-1', 'auto');
     ga('send', 'pageview');
-  </script>
+</script>
 
-    <!-- Header -->
-      <header id="header" class="alt">
-        <h1><strong><a href="index.html">Baby</strong>diem</a></h1>
-        <nav id="nav">
-          <ul>
-            <!-- <li><a href="index.html">Home</a></li> -->
-            <li><a href="babysitter.html">Baby-sitter</a></li>
-            <!--<li><a href="elements.html">Elements</a></li>-->
-          </ul>
-        </nav>
-      </header>
+<!-- Header -->
+<header id="header" class="alt">
+    <h1><strong><a href="index.html">Baby</strong>diem</a></h1>
+    <nav id="nav">
+        <ul>
+            <li><a href="parents.html">Parents</a></li>
+            <li><a href="babysitter.html">Babysitter</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <!-- Banner -->
-      <section id="banner">
-        <!-- Begin MailChimp Signup Form -->
-        <div id="mc_embed_signup">
-        <form action="//github.us12.list-manage.com/subscribe/post?u=baa0b3dea93afdf4344974990&amp;id=a9a83c405c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+<!-- Banner -->
+<section id="banner" class="wrapper style1">
+    <!--End mc_embed_signup-->
+
+    <h2>Baby-sitters certifiés</h2>
+    <p>Un sous titre qui parle aux bbs</p>
+    <!--<ul class="actions">
+      <li><a href="" class="button special big">Rejoindre</a></li>
+    </ul>-->
+</section>
+
+<section class="wrapper style2">
+    <!-- Begin MailChimp Signup Form -->
+    <div id="mc_embed_signup" class="container 100%">
+        <div class="row">
+
+
+        <div class="6u 12u$(small)">
+
+            <h2>Travailler pour Babydiem c'est</h2>
+            <div class="row">
+                <ol>
+                    <li>Des paiements garantis et à prix justes</li>
+                    <li>Un accès priviliégié à des super familles</li>
+                    <li>Une certification qui vous valorise</li>
+                    <li>Un travail proche de chez vous</li>
+                </ol>
+            </div>
+        </div>
+        <div class="6u 12u$(small)">
+        <form action="//github.us12.list-manage.com/subscribe/post?u=baa0b3dea93afdf4344974990&amp;id=a9a83c405c"
+              method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+              target="_blank" novalidate>
             <div id="mc_embed_signup_scroll">
-          <h2>Vous êtes baby-sitter ?</h2>
-        <div class="mc-field-group">
-          <label for="mce-EMAIL">Votre email </label>
-          <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-        </div>
-        <div class="mc-field-group">
-          <label for="mce-FNAME">Votre prénom </label>
-          <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
-        </div>
-        <div class="mc-field-group">
-          <label for="mce-LNAME">Votre nom </label>
-          <input type="text" value="" name="LNAME" class="" id="mce-LNAME">
-        </div>
-        <div class="mc-field-group size1of2">
-          <label for="mce-MMERGE3">Votre téléphone portable </label>
-          <input type="text" name="MMERGE3" class="required" value="" id="mce-MMERGE3">
-        </div>
-        <div class="mc-field-group size1of2">
-          <label for="mce-MMERGE5">Code postal de votre domicile </label>
-          <input type="number" name="MMERGE5" class="" value="" id="mce-MMERGE5">
-        </div>
-          <div id="mce-responses" class="clear">
-            <div class="response" id="mce-error-response" style="display:none"></div>
-            <div class="response" id="mce-success-response" style="display:none"></div>
-          </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_baa0b3dea93afdf4344974990_a9a83c405c" tabindex="-1" value=""></div>
-            <div class="clear"><input type="submit" value="Recevoir le dossier de candidature" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                <div class="row uniform 50%">
+                    <div class="12u 12u$(xsmall)">
+                        <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL"
+                               placeholder="Email">
+                    </div>
+                </div>
+                <div class="row uniform 50%">
+                    <div class="6u 12u$(xsmall)">
+                        <input type="text" value="" name="FNAME" class="" id="mce-FNAME" placeholder="Prenom">
+                    </div>
+                    <div class="6u 12u$(xsmall)">
+                        <input type="text" value="" name="LNAME" class="" id="mce-LNAME" placeholder="Nom">
+                    </div>
+                </div>
+                <div class="row uniform 50%">
+                    <div class="6u 12u$(xsmall)">
+                        <input type="text" name="MMERGE3" class="required" value="" id="mce-MMERGE3"
+                               placeholder="Téléphone" pattern="[0-9]{10}">
+                    </div>
+                    <div class="6u 12u$(xsmall)">
+                        <input type="text" name="MMERGE5" class="" value="" id="mce-MMERGE5" placeholder="Code postal"
+                               pattern="[0-9]{5}">
+                    </div>
+                </div>
+                <div id="mce-responses" class="clear">
+                    <div class="response" id="mce-error-response" style="display:none"></div>
+                    <div class="response" id="mce-success-response" style="display:none"></div>
+                </div>
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+                                                                                          name="b_baa0b3dea93afdf4344974990_a9a83c405c"
+                                                                                          tabindex="-1" value=""></div>
+                <ul class="actions">
+                    <li>
+
+                        <input type="submit" value="Je veux être candidat" name="subscribe"
+                               id="mc-embedded-subscribe" class="button special big">
+                    </li>
+                </ul>
             </div>
         </form>
+            </div>
         </div>
-        <!--End mc_embed_signup-->
+    </div>
+</section>
 
-        <!-- <h2>Baby-sitters certifiés, disponibles dans l'heure</h2>
-        <p>Le bonheur des enfants passe par celui des parents</p>
-        <ul class="actions">
-          <li><a href="" class="button special big">Rejoindre</a></li>
-        </ul> -->
-      </section>
-
-    <!-- Footer -->
-      <footer id="footer">
-        <div class="container">
-          <ul class="icons">
-            <li>Une question ? Contactez-nous !<br/><br/><a href="mailto:bonjour@babydiem.com" class="icon fa-envelope"></a></li>
+<!-- Footer -->
+<footer id="footer">
+    <div class="container">
+        <ul class="icons">
+            <li>Une question ? Contactez-nous !<br/><br/><a href="mailto:bonjour@babydiem.com"
+                                                            class="icon fa-envelope"></a></li>
             <!-- <li><a href="#" class="icon fa-facebook"></a></li>
             <li><a href="#" class="icon fa-twitter"></a></li>
             <li><a href="#" class="icon fa-instagram"></a></li> -->
-          </ul>
-          <ul class="copyright">
+        </ul>
+        <ul class="copyright">
             <li>&copy; Babydiem, tous droits réservés</li>
-          </ul>
-        </div>
-      </footer>
+        </ul>
+    </div>
+</footer>
 
-  </body>
+</body>
 </html>
