@@ -1039,7 +1039,7 @@
 				top: 2em;
 			}
 
-				#header.alt h1 a {
+				#header.alt h1 a, #header.alt h1 strong {
 					color: #ffffff;
 				}
 
@@ -1249,7 +1249,7 @@
 
 /* Marketing */
 
-#one section img {
+.home section img {
 	margin-bottom: 10px;
 	width: 100px;
 }
