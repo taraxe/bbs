@@ -115,6 +115,14 @@
                       target="_blank" novalidate>
                     <div id="mc_embed_signup_scroll">
                         <div class="row uniform 50%">
+                            <div class="6u 12u$(xsmall)">
+                                <input type="text" value="" name="FNAME" class="required" id="mce-FNAME" placeholder="Prenom">
+                            </div>
+                            <div class="6u 12u$(xsmall)">
+                                <input type="text" value="" name="LNAME" class="required" id="mce-LNAME" placeholder="Nom">
+                            </div>
+                        </div>
+                        <div class="row uniform 50%">
                             <div class="12u 12u$(xsmall)">
                                 <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL"
                                        placeholder="Email">
@@ -141,13 +149,12 @@
                         <div style="position: absolute; left: -5000px;" aria-hidden="true">
                             <input type="text" name="b_baa0b3dea93afdf4344974990_a9a83c405c" tabindex="-1" value="">
                         </div>
-
-                        <div class="12u 12u$(xsmall)">
-                            <div class="12u$">
-                                <ul class="actions">
+                        <div class="row uniform 50%">
+                            <div class="12u 12u$(xsmall)">
+                                <ul class="actions single">
                                     <li>
                                         <input type="submit" value="Démarrer" name="subscribe"
-                                               id="mc-embedded-subscribe" class="button special">
+                                               id="mc-embedded-subscribe" class="button special fit">
                                     </li>
                                 </ul>
                             </div>
@@ -156,24 +163,10 @@
                 </form>
                 <script type='text/javascript'
                         src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+
                 <script type='text/javascript'>
-                    (function ($) {
-                        window.fnames = new Array();
-                        window.ftypes = new Array();
-                        fnames[0] = 'EMAIL';
-                        ftypes[0] = 'email';
-                        fnames[3] = 'PHONE';
-                        ftypes[3] = 'phone';
-                        fnames[1] = 'NUM';
-                        ftypes[1] = 'number';
-                        fnames[2] = 'STREET';
-                        ftypes[2] = 'text';
-                        fnames[4] = 'ZIP';
-                        ftypes[4] = 'number';
-                        fnames[5] = 'CITY';
-                        ftypes[5] = 'text';
-                        fnames[6] = 'COUNTRY';
-                        ftypes[6] = 'text';
+                    (function($) {
+                        window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[3]='PHONE';ftypes[3]='phone';fnames[1]='NUM';ftypes[1]='number';fnames[2]='STREET';ftypes[2]='text';fnames[4]='ZIP';ftypes[4]='number';fnames[5]='CITY';ftypes[5]='text';fnames[6]='COUNTRY';ftypes[6]='text';fnames[7]='FNAME';ftypes[7]='text';fnames[8]='LNAME';ftypes[8]='text';
                         /*
                          * Translated default messages for the $ validation plugin.
                          * Locale: FR

@@ -630,6 +630,13 @@
 			padding-left: 0;
 		}
 
+		ul.actions.single li {
+			width: 100%;
+		}
+		ul.actions.single li input {
+			width: 100%;
+		}
+
 			ul.actions li {
 				display: inline-block;
 				padding: 0 1em 0 0;
