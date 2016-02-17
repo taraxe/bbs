@@ -1226,3 +1226,15 @@
 				}
 
 
+/* Form feedback */
+#mce-success-response {
+	background: #A3F7BF;
+	padding: 10px 20px;
+	border-radius: 10px;
+}
+#mce-error-response {
+	background: #f32853;
+	color: white;
+	padding: 10px 20px;
+	border-radius: 10px;
+}
