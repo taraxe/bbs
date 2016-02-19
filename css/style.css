@@ -1154,10 +1154,11 @@
 				.wrapper.style3 header.major h2 {
 					color: #ffffff;
 				}
+
     .wrapper.style4 {
       background-attachment: fixed;
-      background-image: url("images/overlay.png"), url("../images/babysitter2.jpg");
-      background-position: center center;
+      background-image: url("images/overlay.png"), url("../images/a-babysitter.jpg");
+      background-position: center bottom;
       background-size: cover;
     }
       .wrapper.style4 header.major h2 {
