@@ -50,6 +50,10 @@
 		font-weight: 700;
 	}
 
+	strong a, b a {
+		color: #484848;
+	}
+
 	em, i {
 		font-style: italic;
 	}
